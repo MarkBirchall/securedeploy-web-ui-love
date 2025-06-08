@@ -47,24 +47,24 @@ const LandingPage = () => {
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <div className="relative">
-              <Shield className="h-8 w-8 text-blue-600" aria-hidden="true" />
+              <Shield className="h-8 w-8 text-orange-600" aria-hidden="true" />
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-emerald-500 rounded-full"></div>
             </div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
                 SecureDeploy
               </h1>
               <p className="text-xs text-slate-500 -mt-1">.ai</p>
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="outline" onClick={() => navigate('/login')} className="border-blue-200 text-blue-600 hover:bg-blue-50">
+            <Button variant="outline" onClick={() => navigate('/login')} className="border-orange-200 text-orange-600 hover:bg-orange-50">
               Sign In
             </Button>
             <Button 
               variant="outline" 
               onClick={() => window.open('mailto:sales@securedeploy.ai', '_blank')}
-              className="bg-blue-600 text-white border-blue-600 hover:bg-blue-700"
+              className="bg-orange-600 text-white border-orange-600 hover:bg-orange-700"
             >
               <Mail className="mr-2 h-4 w-4" />
               Contact Sales
@@ -74,16 +74,16 @@ const LandingPage = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-24" aria-labelledby="hero-heading">
+      <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 py-24" aria-labelledby="hero-heading">
         <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] -z-10"></div>
         <div className="container mx-auto px-4 text-center relative">
-          <div className="inline-flex items-center rounded-full px-4 py-2 bg-blue-100 text-blue-700 text-sm font-medium mb-8">
+          <div className="inline-flex items-center rounded-full px-4 py-2 bg-orange-100 text-orange-700 text-sm font-medium mb-8">
             <Zap className="mr-2 h-4 w-4" />
             AI-Powered Device Deployment Platform
           </div>
           <h2 id="hero-heading" className="text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
             Enterprise Device Deployment
-            <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
               Made Simple
             </span>
           </h2>
@@ -95,7 +95,7 @@ const LandingPage = () => {
             <Button 
               size="lg" 
               onClick={() => navigate('/login')}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
+              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 text-lg"
             >
               Sign In to Platform
             </Button>
@@ -103,7 +103,7 @@ const LandingPage = () => {
               variant="outline" 
               size="lg" 
               onClick={() => window.open('mailto:sales@securedeploy.ai', '_blank')}
-              className="border-blue-200 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg"
+              className="border-orange-200 text-orange-600 hover:bg-orange-50 px-8 py-4 text-lg"
             >
               <Mail className="mr-2 h-5 w-5" />
               Request Demo
@@ -128,10 +128,10 @@ const LandingPage = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="border-slate-200 hover:border-blue-300 hover:shadow-xl transition-all duration-300 group">
+              <Card key={index} className="border-slate-200 hover:border-orange-300 hover:shadow-xl transition-all duration-300 group">
                 <CardHeader className="pb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <feature.icon className="h-6 w-6 text-blue-600" aria-hidden="true" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-amber-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                    <feature.icon className="h-6 w-6 text-orange-600" aria-hidden="true" />
                   </div>
                   <CardTitle className="text-slate-900 text-xl">{feature.title}</CardTitle>
                 </CardHeader>
@@ -147,19 +147,19 @@ const LandingPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-amber-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Transform Your IT Operations?
           </h2>
-          <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-orange-100 text-lg mb-8 max-w-2xl mx-auto">
             Join leading enterprises who trust SecureDeploy.ai for their device deployment needs.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 
               size="lg" 
               onClick={() => window.open('mailto:sales@securedeploy.ai', '_blank')}
-              className="bg-white text-blue-600 hover:bg-slate-100 px-8 py-4"
+              className="bg-white text-orange-600 hover:bg-slate-100 px-8 py-4"
             >
               <Mail className="mr-2 h-5 w-5" />
               Contact Sales Team
@@ -183,7 +183,7 @@ const LandingPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <Shield className="h-6 w-6 text-blue-600" />
+                <Shield className="h-6 w-6 text-orange-600" />
                 <span className="text-lg font-bold text-slate-900">SecureDeploy.ai</span>
               </div>
               <p className="text-slate-600">
