@@ -178,8 +178,8 @@ const AppLibrary = () => {
                 <p className="text-muted-foreground">No applications found matching your criteria.</p>
               </div>
             )}
-          </CardContent>
-        </Card>
+          </Tabs>
+        </CardContent>
       </Card>
     </div>
   );
