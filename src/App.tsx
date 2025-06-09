@@ -12,7 +12,7 @@ import ForgotPassword from "./components/Auth/ForgotPassword";
 import MFAPrompt from "./components/Auth/MFAPrompt";
 import MFASetup from "./components/Auth/MFASetup";
 import MainLayout from "./components/Layout/MainLayout";
-import Dashboard from "./components/Dashboard/Dashboard";
+import { Dashboard } from "./components/Dashboard/Dashboard";
 import SequenceList from "./components/TaskSequences/SequenceList";
 import SequenceEditor from "./components/TaskSequences/SequenceEditor";
 import ImageList from "./components/ReferenceImages/ImageList";
