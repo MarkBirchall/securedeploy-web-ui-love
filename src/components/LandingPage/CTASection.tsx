@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Mail, Phone } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export const CTASection = () => {
   return (
@@ -9,7 +9,7 @@ export const CTASection = () => {
         <h2 className="text-3xl font-bold text-white mb-4">
           Ready to Transform Your IT Operations?
         </h2>
-        <p className="text-[#FEB329]/80 text-lg mb-8 max-w-2xl mx-auto">
+        <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
           Join leading enterprises who trust SecureDeploy.ai for their device deployment needs.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -20,15 +20,6 @@ export const CTASection = () => {
           >
             <Mail className="mr-2 h-5 w-5" />
             Contact Sales Team
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            onClick={() => window.open('tel:+44-800-000-0000', '_blank')}
-            className="border-white text-white hover:bg-white/10 px-8 py-4"
-          >
-            <Phone className="mr-2 h-5 w-5" />
-            Call: 0800 000 0000
           </Button>
         </div>
       </div>
